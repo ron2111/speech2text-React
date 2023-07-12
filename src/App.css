@@ -17,12 +17,12 @@ body {
   justify-content: center;
   align-items: center;
   align-self: center;
-  background: rgb(255 255 255);
+  background: rgb(236, 236, 242);
 }
 
 .container {
   padding: 30px;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 h2 {
@@ -36,13 +36,15 @@ h2 {
 p {
   max-width: 50rem;
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .main-content {
-  max-width: 50rem;
+  display: flex;
+  max-width: 60rem;
   width: 100%;
+  flex-direction: row;
   min-height: 400px;
   height: auto;
   padding: 18px 18px 120px 18px;
@@ -58,9 +60,25 @@ p {
   border: 0.3px solid rgb(43, 45, 56, 0.3);
   outline: none;
 }
+.min-container {
+max-width: 40rem;
+  width: 100%;
+  min-height: 150px;
+  height: auto;
+  padding: 18px 18px 120px 18px;
+  margin: 10px;
+  box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+  background: rgb(255 255 255);
+  border: 0.5px solid rgb(231 233 245);
+  border-radius: 16px;
 
+}
+.min-container:focus {
+  border: 0.3px solid rgb(43, 45, 56, 0.3);
+  outline: none;
+}
 p,
-.main-content {
+.main-content .min-container{
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -74,12 +92,12 @@ p,
 
 button {
   /* position: absolute; */
-  background: rgb(17 166 131);
+  background: rgb(46, 14, 208);
   color: rgb(255 255 255);
   border-radius: 6px;
-  padding: 16px 32px;
+  padding: 14px 20px;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: 1px;
   margin: auto;
   display: flex;
@@ -135,4 +153,15 @@ button:hover {
   .counter-container p:first-child {
     margin-bottom: 0;
   }
+}
+
+
+.textAreaStyle{
+  width: 500px;
+  border-radius: 12px;
+  height: 163px;
+  border-width: 1px;
+  font: 1em sans-serif;
+  margin-top: 25px;
+  margin-bottom: 49px;
 }
